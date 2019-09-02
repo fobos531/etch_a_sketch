@@ -2,6 +2,10 @@ html, body {
   height: 100%;
 }
 
+body {
+  background: url(https://source.unsplash.com/random/1920x1080);
+}
+
 #max {
   display: flex;
   flex-direction: column;
@@ -13,14 +17,29 @@ html, body {
 
 button {
   margin: 15px;
+  padding: 5px 20px;
+  border:none;
+  font-weight: bold;
+  color: white;
+  font-family: 'Manjari', Arial, Helvetica, sans-serif;
+  letter-spacing: .05em;
+  transition: 0.5s all;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+button:hover {
+  transform: scale(1.15);
+  font-weight: bold;
 }
 
 #container {
-  border: 5px dashed red;
+  border: 3px dashed red;
   display: block;
   height: 500px;
   width: 500px;
   line-height: 0px;
+  opacity: 0.6;
 }
 
 #container > div {
