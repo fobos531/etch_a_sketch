@@ -1,14 +1,31 @@
 html, body {
   height: 100%;
 }
-#container {
+
+#max {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100%;
+  justify-content: center;
+  height:100%;
+  width: 100%;
 }
+
+button {
+  margin: 15px;
+}
+
+#container {
+  border: 5px dashed red;
+  display: block;
+  height: 500px;
+  width: 500px;
+  line-height: 0px;
+}
+
 #container > div {
-  width: 10%;
-  height: 10%;
+  display:inline-block;
+  width: 31.25px;
+  height: 31.25px;
   background-color:white;
 }
