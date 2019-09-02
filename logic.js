@@ -29,6 +29,7 @@ function resetGrid() {
     container.innerHTML= "";
     let size = +(prompt("How many squares per side do you want? e.g. 20 for 20x20 grid"));
     //create a sizexsize sized grid
+    if (!size) size = 16; //defualt to 16x16 if no size is provided
     for (let i = 0 && i != 0; i < size**2;i++) {
         if (i%size==0) {
             container.innerHTML += "<br>";
